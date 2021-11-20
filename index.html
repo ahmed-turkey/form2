@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="get">
+        
+        <section> <h2>how can we help you?</h2>
+          <ul>
+            <li class="personal-information">
+              <label for="user-name">your name</label>
+              <input
+                id="user-name"
+                type="text"
+                name="username"
+                required
+                placeholder="ahmed turkey"
+              />
+            </li>
+            <li class="personal-information">
+              <label for="user-email">your E-mail address</label>
+              <input
+                id="user-email"
+                type="email"
+                name="useremail"
+                required
+                placeholder="ahmedtorky704@gmail.com"
+              />
+            </li>
+            <li class="personal-information">
+              <label for="user-phone">your phone number</label>
+              <input
+                id="user-phone"
+                type="number"
+                name="userphone"
+                required
+                maxlength="11"
+                minlength="11"
+              />
+            </li>
+    
+          </ul>
+        </section>
+        <section>
+            <label for="user-message">your message</label>
+            <textarea name="usermessage" id="user-message" cols="30" rows="10"></textarea>
+        </section>
+        <section>
+          <label for="dropdown-menue">how did you find us?</label> 
+          <select name="found-us-via" id="dropdown-menue">
+            <option value="web-search">web search</option>
+            <option value="word-of-mouth"> word of mouth</option>
+            <option value="other-way">other</option>
+          </select>
+        </section>
+        <section>
+          <h2>how should we replay?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <label for="via-call">call me</label>
+              <input id="via-call" type="radio" name="contact" value="phone-call" >
+            </li>
+            <li class="form-control-inline">
+              <label for="via-email">send me an email</label>
+              <input id="via-email" type="radio" name="contact"value="email" >
+            
+            </li>
+            <li class="form-control-inline">
+<label for="no-replay">don't replay</label>
+<input id="no-replay" type="radio" name="contact" value="none">
+            </li>
+          </ul>   </section>
+          <section class="form-control-inline">
+            <label for="terms">accept terms</label>
+            <input id="terms" type="checkbox" name="terms" value="accept">
+          </section>
+          <section id="buttons">
+            <button id="clear-button" type="reset">clear</button>
+            <button id="submit-button" type="submit">submit </button>
+          </section>
+
+      </form>
+    </main>
+  </body>
+</html>
