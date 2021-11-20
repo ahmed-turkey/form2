@@ -15,8 +15,8 @@ form {
   border-radius: 8px;
   box-shadow: 0.2rem 0.2rem 0.5rem gray;
 }
-section{
-    margin: 0.5rem;
+section {
+  margin: 0.5rem;
 }
 form ul {
   list-style: none;
@@ -24,10 +24,11 @@ form ul {
 
   margin: 0;
 }
-form li { margin:  0.8rem 0;
+form li {
+  margin: 0.8rem 0;
 }
-form li label{
-    margin: 0.5rem;
+form li label {
+  margin: 0.5rem;
 }
 
 input,
@@ -47,9 +48,10 @@ select {
   width: auto;
   margin-right: 0.8rem;
   cursor: pointer;
-
 }
-
+input:focus-visible{
+    outline: none;
+}
 textarea {
   resize: vertical;
 }
@@ -66,31 +68,31 @@ textarea {
   margin-left: 0.5rem;
   align-content: center;
 }
-input:focus,textarea:focus{ background-color: rgb(145, 204, 238);
-    outline: none;
-
+input:focus,
+textarea:focus {
+  background-color: rgb(145, 204, 238);
+  outline: none;
 }
 label {
   display: flex;
   align-items: center;
   font-weight: bold;
-  
 }
-option{
-    background-color:rgb(145, 204, 238);
-   
+option {
+  background-color: rgb(145, 204, 238);
 }
-button{ cursor: pointer;
-    width: 4.5rem;
-    height: 2rem;
-    font-size: inherit;
-    font-weight: bold;
-    border-radius: 8px;
-    margin: 1rem 0.5rem;
+button {
+  cursor: pointer;
+  width: 4.5rem;
+  height: 2rem;
+  font-size: inherit;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 1rem 0.5rem;
 }
-#submit-button{
-    background-color: rgb(145, 204, 238);
+#submit-button {
+  background-color: rgb(145, 204, 238);
 }
-#submit-button:hover{
-    background-color: rgb(79, 180, 238);
+#submit-button:hover {
+  background-color: rgb(79, 180, 238);
 }
